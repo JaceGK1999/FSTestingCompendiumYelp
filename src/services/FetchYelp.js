@@ -8,4 +8,6 @@ export async function fetchRestaurantZip(zip = '97211', search = '') {
       headers: { Accept: 'application/json' },
     }
   );
+  const data = await resp.json();
+  return data;
 }
